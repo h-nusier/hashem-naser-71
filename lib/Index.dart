@@ -13,8 +13,8 @@ class IndexPage extends StatefulWidget {
 int _bindex = 0;
 List<Widget> _pages =[
   HomePage(),
-  SettingsPage(),
   SearchPage(),
+  SettingsPage(),
   AccountPage(),
 ];
 
@@ -37,8 +37,8 @@ class _IndexPageState extends State<IndexPage> {
 
           items:[
             BottomNavigationBarItem(icon: Icon(Icons.home,),label:("home"),) ,
-            BottomNavigationBarItem(icon: Icon(Icons.settings,),label:("settings")),
             BottomNavigationBarItem(icon: Icon(Icons.search,),label:("search")),
+            BottomNavigationBarItem(icon: Icon(Icons.settings,),label:("settings")),
             BottomNavigationBarItem(icon: Icon(Icons.account_box_sharp,),label:("account"),
             ),
 
@@ -62,9 +62,9 @@ String _gettitle(int index){
     case 0:
       return 'Home';
     case 1:
-      return 'Settings';
-    case 2:
       return 'Search';
+    case 2:
+      return 'Settings';
     case 3:
       return 'Account';
     default :
